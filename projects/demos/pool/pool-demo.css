@@ -1,0 +1,22 @@
+#pool-canvas {
+    position: relative;
+}
+
+#canvas-overlay {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+
+#canvas-overlay-black {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+}
+
+#canvas-overlay li {
+    text-align: left;
+}
