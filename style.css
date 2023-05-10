@@ -51,6 +51,14 @@ h3:after {
   text-align: center;
 }
 
+a {
+  color: var(--accent-dark);
+}
+
+a:hover, a:active {
+  color: var(--accent-darker);
+}
+
 /*------------------------------------- Overrides -------------------------------------*/
 
 .navbar {
