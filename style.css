@@ -59,6 +59,10 @@ a:hover, a:active {
   color: var(--accent-darker);
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /*------------------------------------- Overrides -------------------------------------*/
 
 .navbar {
@@ -103,6 +107,10 @@ a:hover, a:active {
   object-fit: cover;
 }
 
+.card-footer {
+  border: none;
+}
+
 .card-title {
   font-size: 1.15rem;
 }
@@ -132,5 +140,22 @@ a:hover, a:active {
   max-width: 70em;
 }
 
-/*--------------------------------- Header highlights ---------------------------------*/
+/*--------------------------------------- Modals --------------------------------------*/
 
+.modal-title {
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+.modal-header {
+  background-color: var(--bg-color);
+  border: none;
+}
+
+.modal-body, .modal-content {
+  background-color: var(--bg-color);
+}
+
+.btn-close-sm {
+  font-size: .9em;
+}
