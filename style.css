@@ -116,6 +116,10 @@ a:hover, a:active {
   font-size: 0.95rem;
 }
 
+.card-clickable {
+  cursor: pointer;
+}
+
 /*---------------------------------- Container sizes ----------------------------------*/
 
 .landing-container {
@@ -132,5 +136,22 @@ a:hover, a:active {
   max-width: 70em;
 }
 
-/*--------------------------------- Header highlights ---------------------------------*/
+/*--------------------------------------- Modals --------------------------------------*/
 
+.modal-title {
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+.modal-header {
+  background-color: var(--bg-color);
+  border: none;
+}
+
+.modal-body, .modal-content {
+  background-color: var(--bg-color);
+}
+
+.btn-close-sm {
+  font-size: .9em;
+}

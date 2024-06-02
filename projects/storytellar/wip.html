@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beatriz Alves</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="../../style.css" rel="stylesheet">
+  </head>
+  <body>    
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+        <div class="container navbar-container">
+        <a class="navbar-brand" href="../../index.html">Beatriz Alves</a>
+            <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse"> <!-- mobile -->
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../../portfolio.html">Portfolio</a>
+                    </li>
+                    <!--
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                    -->
+                        <a class="nav-link mx-2" href="../../cv.pdf">CV</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container content-container">
+        <div class="row">
+            <div class="col">
+                <h2 class="h-mmm">StorytellAR (WIP)</h2>
+                <p>
+                    StorytellAR will go through another iteration before being published, based on results from the user tests. In the meantime, here are some screenshots, along with a video that was used to present the app to the test participants.
+                </p>
+                <p>
+                    The app was made in Unity, using ARFoundation with ARCore Extensions (for the Recording and Playback API).
+                </p>
+                <p>
+                    A previous version used Firebase (Storage and Realtime Database) to share the created stories between devices. This had to be removed from the current version, as it wouldn't be feasible to test this functionality with the users. It might be present in the final version.
+                </p>
+                <p>
+                    All of the main illustrations and animations belong to project <a href="https://mobeybou.com/">Mobeybou</a>.
+                </p>
+                <h3>Screenshots</h3>
+                <div class="row row-cols-2 row-cols-sm-3 g-4">
+                    <div class="col">
+                      <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Main menu" data-bs-filename="windows-95-setup.png">
+                        <img src="screenshots/windows-95-setup.png" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            Main menu
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Scene browser" data-bs-filename="windows-95-setup.png">
+                        <img src="screenshots/windows-95-setup.png" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            Scene browser
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Editing story details" data-bs-filename="windows-95-setup.png">
+                        <img src="screenshots/windows-95-setup.png" class="card-img-top">
+                        <div class="card-footer">
+                            Editing story details
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Incorporating the real world" data-bs-filename="windows-95-setup.png">
+                          <img src="screenshots/windows-95-setup.png" class="card-img-top">
+                          <div class="card-footer">
+                              Incorporating the real world
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Using virtual landscapes" data-bs-filename="windows-95-setup.png">
+                          <img src="screenshots/windows-95-setup.png" class="card-img-top">
+                          <div class="card-footer">
+                              Using virtual landscapes
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Selecting story elements" data-bs-filename="windows-95-setup.png">
+                          <img src="screenshots/windows-95-setup.png" class="card-img-top">
+                          <div class="card-footer">
+                              Selecting story elements
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Video</h3>
+                <p class="video-embed">
+                    <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/swnOk9THIus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------- Modal -------->
+    <div class="modal" id="imgModal" tabindex="-1" aria-labelledby="imgModalCaption" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header py-2">
+              <h1 class="modal-title fs-6" id="imgModalCaption">New message</h1>
+              <button type="button" class="btn-close btn-close-white btn-close-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <img id="modalImage" class="w-100" src="">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script>
+        const imgModal = document.getElementById('imgModal')
+        if (imgModal) {
+            imgModal.addEventListener('show.bs.modal', event => {
+                // Button that triggered the modal
+                const button = event.relatedTarget
+
+                // Extract info from data-bs-* attributes
+                const caption = button.getAttribute('data-bs-caption')
+                const imgfilename = button.getAttribute('data-bs-filename')
+
+                // Update the modal's content.
+                const modalTitle = imgModal.querySelector('.modal-title')
+                const modalImage = document.getElementById('modalImage')
+
+                modalTitle.textContent = caption
+                modalImage.src = 'screenshots/' + imgfilename
+            })
+        }
+    </script>
+
+  </body>
+</html>
