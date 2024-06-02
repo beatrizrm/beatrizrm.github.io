@@ -59,6 +59,10 @@ a:hover, a:active {
   color: var(--accent-darker);
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /*------------------------------------- Overrides -------------------------------------*/
 
 .navbar {
@@ -103,6 +107,10 @@ a:hover, a:active {
   object-fit: cover;
 }
 
+.card-footer {
+  border: none;
+}
+
 .card-title {
   font-size: 1.15rem;
 }
@@ -114,10 +122,6 @@ a:hover, a:active {
 
 .card-text {
   font-size: 0.95rem;
-}
-
-.card-clickable {
-  cursor: pointer;
 }
 
 /*---------------------------------- Container sizes ----------------------------------*/

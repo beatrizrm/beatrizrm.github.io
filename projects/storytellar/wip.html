@@ -31,12 +31,12 @@
         </div>
     </nav>
     
-    <div class="container content-container">
+    <div class="container content-container mb-5">
         <div class="row">
             <div class="col">
                 <h2 class="h-mmm">StorytellAR (WIP)</h2>
                 <p>
-                    StorytellAR will go through another iteration before being published, based on results from the user tests. In the meantime, here are some screenshots, along with a video that was used to present the app to the test participants.
+                    StorytellAR will go through another iteration before being published, based on results from the user tests.
                 </p>
                 <p>
                     The app was made in Unity, using ARFoundation with ARCore Extensions (for the Recording and Playback API).
@@ -50,58 +50,54 @@
                 <h3>Screenshots</h3>
                 <div class="row row-cols-2 row-cols-sm-3 g-4">
                     <div class="col">
-                      <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Main menu" data-bs-filename="windows-95-setup.png">
-                        <img src="screenshots/windows-95-setup.png" class="card-img-top" alt="...">
+                      <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Main menu" data-bs-filename="main.jpg">
+                        <img src="screenshots/main.jpg" class="card-img-top">
                         <div class="card-footer">
                             Main menu
                           </div>
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Scene browser" data-bs-filename="windows-95-setup.png">
-                        <img src="screenshots/windows-95-setup.png" class="card-img-top" alt="...">
+                      <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Scene browser" data-bs-filename="scenebrowser.jpg">
+                        <img src="screenshots/scenebrowser.jpg" class="card-img-top">
                         <div class="card-footer">
                             Scene browser
                           </div>
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Editing story details" data-bs-filename="windows-95-setup.png">
-                        <img src="screenshots/windows-95-setup.png" class="card-img-top">
+                      <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Selecting story elements" data-bs-filename="select.jpg">
+                        <img src="screenshots/select.jpg" class="card-img-top">
                         <div class="card-footer">
-                            Editing story details
+                            Selecting story elements
                           </div>
                       </div>
                     </div>
                     <div class="col">
-                        <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Incorporating the real world" data-bs-filename="windows-95-setup.png">
-                          <img src="screenshots/windows-95-setup.png" class="card-img-top">
+                        <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Incorporating the real world" data-bs-filename="house.jpg">
+                          <img src="screenshots/house.jpg" class="card-img-top">
                           <div class="card-footer">
                               Incorporating the real world
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Using virtual landscapes" data-bs-filename="windows-95-setup.png">
-                          <img src="screenshots/windows-95-setup.png" class="card-img-top">
+                        <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Using virtual landscapes" data-bs-filename="desert.jpg">
+                          <img src="screenshots/desert.jpg" class="card-img-top">
                           <div class="card-footer">
                               Using virtual landscapes
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card card-clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Selecting story elements" data-bs-filename="windows-95-setup.png">
-                          <img src="screenshots/windows-95-setup.png" class="card-img-top">
-                          <div class="card-footer">
-                              Selecting story elements
-                            </div>
-                        </div>
-                    </div>
                 </div>
+
                 <h3>Video</h3>
-                <p class="video-embed">
-                    <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/swnOk9THIus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                <p class="mb-4">
+                  Here is a short video that was used to present the main functionalities to the test participants.
                 </p>
+                <p class="video-embed">
+                    <iframe width="640" height="360" class="rounded" src="https://www.youtube.com/embed/Jg7_Y8n3urQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </p>
             </div>
         </div>
     </div>
@@ -109,14 +105,14 @@
 
     <!-------- Modal -------->
     <div class="modal" id="imgModal" tabindex="-1" aria-labelledby="imgModalCaption" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header py-2">
               <h1 class="modal-title fs-6" id="imgModalCaption">New message</h1>
               <button type="button" class="btn-close btn-close-white btn-close-sm" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0">
-              <img id="modalImage" class="w-100" src="">
+              <img id="modalImage" class="w-100 rounded-bottom clickable" src="" data-bs-dismiss="modal">
             </div>
           </div>
         </div>
