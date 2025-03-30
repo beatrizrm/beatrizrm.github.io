@@ -4,6 +4,7 @@
   --accent-dark: #96ba4a;
   --accent-darker: #81a534;
   --text-color: #e6e3e0;
+  --text-muted: #a2a0ad;
   --nav-color: #1d1c22;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
 }
@@ -33,7 +34,7 @@ h2:after {
 }
 
 h3 {
-  margin-top: 1em;
+  margin-top: 1.2em;
   padding-left: 1rem;
 }
 h3:after {
@@ -45,6 +46,10 @@ h3:after {
   left: -1rem;
   top: -1.7rem;
   z-index: -1;
+}
+
+h4 {
+  margin-top: 1em;
 }
 
 .video-embed {
@@ -62,6 +67,13 @@ a:hover, a:active {
 .clickable {
   cursor: pointer;
 }
+
+/*---------------------------------- Highlight sizes ----------------------------------*/
+
+.h-pool:after {
+  width: 4.8rem;
+}
+
 
 /*------------------------------------- Overrides -------------------------------------*/
 
@@ -158,4 +170,31 @@ a:hover, a:active {
 
 .btn-close-sm {
   font-size: .9em;
+}
+
+/*----------------------------------- Project pages -----------------------------------*/
+
+.project-tech {
+  background-color: var(--nav-color);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.project-tech p {
+  margin-bottom: 0rem;
+}
+
+.project-tech ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.project-tech li:not(:first-child)::before {
+  content: "|";
+  color: var(--accent-dark);
+  margin-right: 0.7rem;
 }
