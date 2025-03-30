@@ -24,6 +24,7 @@
                         <a class="nav-link" href="../contact.html">Contact</a>
                     </li>
                     -->
+                    <li>
                         <a class="nav-link mx-2" href="../cv.pdf">CV</a>
                     </li>
                 </div>
@@ -35,15 +36,98 @@
         <div class="row">
             <div class="col">
                 <h2>Matchbox</h2>
-                <p>A platform for project making that matches people and ideas. The front end was done by me, and I also worked on some features in the back end.</p>
-                <p>The source code is available <a href="https://github.com/beatrizrm/Matchbox">here</a>.</p>
+                <div class="project-tech">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Frontend: HTML, CSS, Bootstrap, JavaScript</li>
+                        <li class="list-inline-item">Backend: Django</li>
+                    </ul>
+                </div>
+                <p>A platform that connects creative individuals with project ideas, facilitating team formation and collaboration. Key features include:</p>
+                <ul>
+                    <li>Customizable user profiles</li>
+                    <li>Project discovery and submission system</li>
+                    <li>Real-time notifications for team applications</li>
+                </ul>
+                <p>My contributions:</p>
+                <ul>
+                    <li>Led frontend development</li>
+                    <li>Contributed to core backend features</li>
+                </ul>
+                <p>The source code is available in the project's <a href="https://github.com/beatrizrm/Matchbox">GitHub repository</a>.</p>
+                <h3>Screenshots</h3>
+                <div class="row row-cols-2 row-cols-sm-3 g-4">
+                    <div class="col">
+                        <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Main menu" data-bs-filename="main.png">
+                            <img src="imgs/matchbox/main.png" class="card-img-top">
+                            <div class="card-footer">
+                                Homepage
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Finding a project" data-bs-filename="find.png">
+                            <img src="imgs/matchbox/find.png" class="card-img-top">
+                            <div class="card-footer">
+                                Finding a project
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card clickable h-100" data-bs-toggle="modal" data-bs-target="#imgModal" data-bs-caption="Creating a project" data-bs-filename="create.png">
+                            <img src="imgs/matchbox/create.png" class="card-img-top">
+                            <div class="card-footer">
+                                Creating a project
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h3>Demo</h3>
-                <p class="video-embed">
+                <div class="video-embed mb-5">
                     <iframe width="640" height="360" class="rounded" src="https://www.youtube.com/embed/sGSZccXUVHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-------- Modal -------->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModalCaption" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header py-2">
+              <h1 class="modal-title fs-6" id="imgModalCaption"></h1>
+              <button type="button" class="btn-close btn-close-white btn-close-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <img id="modalImage" class="w-100 rounded-bottom clickable" src="" data-bs-dismiss="modal">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script>
+        const imgModal = document.getElementById('imgModal')
+        if (imgModal) {
+            imgModal.addEventListener('show.bs.modal', event => {
+                // Button that triggered the modal
+                const button = event.relatedTarget
+
+                // Extract info from data-bs-* attributes
+                const caption = button.getAttribute('data-bs-caption')
+                const imgfilename = button.getAttribute('data-bs-filename')
+
+                // Update the modal's content.
+                const modalTitle = imgModal.querySelector('.modal-title')
+                const modalImage = document.getElementById('modalImage')
+
+                modalTitle.textContent = caption
+                modalImage.src = 'imgs/matchbox/' + imgfilename
+            });
+            imgModal.addEventListener('hidden.bs.modal', event => {
+                modalImage.src = "";
+            });
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
   </body>
